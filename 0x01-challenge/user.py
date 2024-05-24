@@ -1,17 +1,23 @@
 #!/usr/bin/python3
+""" 
+User class
+"""
 
 class User:
-    """ User class """
+    """ User class documentation """
 
     def __init__(self):
+        """ Initialization """
         self.__email = None
 
     @property
     def email(self):
+        """ Getter for email """
         return self.__email
 
     @email.setter
     def email(self, value):
+        """ Setter for email """
         if not isinstance(value, str):
             raise TypeError("email must be a string")
         self.__email = value
